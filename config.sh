@@ -4,7 +4,7 @@ docker run -d \
     --name valheim-server \
     -p 2456-2458:2456-2458/udp \
     -e NAME="Nerds Only" \
-    -e WORLD="My World" \
+    -e WORLD="NerdWorld" \
     -e PASSWORD="boomstick" \
     -e PUID=1000 \
     -e PGID=1000 \
