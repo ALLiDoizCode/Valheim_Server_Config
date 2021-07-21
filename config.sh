@@ -15,7 +15,7 @@ docker run -d \
     -e AUTO_BACKUP_DAYS_TO_LIVE=1 \
     -e AUTO_BACKUP_PAUSE_WITH_NO_PLAYERS=1 \
     -e WEBHOOK_URL="https://discord.com/api/webhooks/867487095710679060/XSSrRW6F5jr4-OWiLGHctSzfkfisj2Vevl7Etd11GCubDe0eIIRwpkXCeIwrOsWUnM2i" \
-    -v ./valheim/saves:/home/steam/.config/unity3d/IronGate/Valheim \
-    -v ./valheim/backups:/home/steam/backups \
-    -v ./valheim/server:/home/steam/valheim \
+    -v ./valheim/saves:./Valheim \
+    -v ./valheim/backups:./backups \
+    -v ./valheim/server:./valheim \
     mbround18/valheim-docker
